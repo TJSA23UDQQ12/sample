@@ -12,9 +12,9 @@ if API_KEY is None:
 
 initialize(ETRI='LATEST')
 labeler = RoleLabeler(API.ETRI, etri_key=API_KEY)
-# recognizer = EntityRecognizer(etri_key=API_KEY)
-# parser = Parser(etri_key=API_KEY)
-# tagger = Tagger(etri_key=API_KEY)
+# recognizer = EntityRecognizer(API.ETRI, etri_key=API_KEY)
+# parser = Parser(API.ETRI, etri_key=API_KEY)
+# tagger = Tagger(API.ETRI, etri_key=API_KEY)
 
 while True:
     text = input("분석할 문장을 입력하세요>> ").strip()
